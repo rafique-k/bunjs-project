@@ -1,4 +1,4 @@
-console.log("Hello via Bun!");
+// console.log("Hello via Bun!");
 
 const server = Bun.serve({
     port: 3000,
@@ -22,5 +22,5 @@ const server = Bun.serve({
         // console.log("This is another line of code i have written");
     },
 });
-console.log(`Bun Server is running at http://localhost:${server.port}`);
-console.log("This is another line of code i have written");
+// console.log(`Bun Server is running at http://localhost:${server.port}`);
+// console.log("This is another line of code i have written");
