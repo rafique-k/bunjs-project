@@ -1,4 +1,3 @@
-// console.log("Hello via Bun!");
 
 const server = Bun.serve({
     port: 3000,
