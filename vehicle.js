@@ -13,13 +13,35 @@
 // console.log(`Car Engine: ${car.engine}`);
 // console.log(`Car Maker: ${car.maker}`);
 
-let user = {
-    name: "Rafique Khan",
-    age: 30
-}
+// let user = {
+//     name: "Rafique Khan",
+//     age: 30
+// }
 
-user.sayHi = ()=> {
-    console.log(`Hello From Mr. ${user.name}`)
+// user.sayHi = ()=> {
+//     console.log(`Hello From Mr. ${user.name}`)
+// };
+
+// user.sayHi();
+
+// let user = {
+//     firstName: "Rafique",
+//     sayHi(){
+//         let arrow = ()=> console.log(this.firstName);
+//             arrow();
+//     }
+// };
+
+// user.sayHi();
+
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function(){
+        return person.firstName + " " + person.lastName;
+    }
 };
 
-user.sayHi();
+console.log(person.fullName());
+
+
