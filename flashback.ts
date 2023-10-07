@@ -97,27 +97,35 @@
 
 //while loop examples
 
-const correctNumber = Math.floor(Math.random() * 6);
+
 let playerGuess: any;
 let attempts = 0;
+let totalAttempts = 3;
 
-while(true)
+while(attempts < totalAttempts)
 {
+    const correctNumber = Math.floor(Math.random() * 6);
+    console.log(`Correct Number : ${correctNumber}`);
     playerGuess = parseInt(prompt("Guess the number"));
-    // let playerGuess = parseInt(takeGuess);
-    if(playerGuess === correctNumber)
-    {
-        console.log(`Congratulations! You guessed the correct number: ${correctNumber}`);
-        attempts++
-        break;
-    }
-    else
-    {
-        console.log(`Sorry, the correct number was ${correctNumber}. Try again.`);
-        attempts++
-    }
+    
+        if(playerGuess === correctNumber)
+        {
+            console.log(`Congratulations! You guessed the correct number: ${correctNumber}`);
+            attempts++
+            break;
+        }
+        else
+        {
+            console.log(`Sorry, the correct number was ${correctNumber}. Try again.`);
+            attempts++
+        }
 }
-console.log(`You took total ${attempts} attempts to guess the number`); 
+
+if(attempts === totalAttempts)
+{
+    console.log(`Sorry you are out of attempts ${totalAttempts} available`);
+}
+// console.log(`You took total ${attempts} attempts to guess the number`); 
 
 
 
