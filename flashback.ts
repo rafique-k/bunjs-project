@@ -97,8 +97,8 @@
 
 //while loop examples
 
-const correctNumber = 7;
-let playerGuess: number;
+const correctNumber = Math.floor(Math.random() * 6);
+let playerGuess: any;
 let attempts = 0;
 
 while(true)
@@ -113,7 +113,7 @@ while(true)
     }
     else
     {
-        console.log(`Sorry, that's not the correct number. Try again.`);
+        console.log(`Sorry, the correct number was ${correctNumber}. Try again.`);
         attempts++
     }
 }
