@@ -117,5 +117,7 @@ while(true)
         attempts++
     }
 }
-console.log(`You took total ${attempts} attempts to guess the number`);
+console.log(`You took total ${attempts} attempts to guess the number`); 
+
+
 
