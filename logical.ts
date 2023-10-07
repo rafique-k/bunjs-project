@@ -9,4 +9,6 @@ else
     console.log('Office is open');
 }
 
-
+//double ternary operator to give default value if primary value is missing
+let user = prompt("Enter Username");
+console.log(user ?? "Anonymous");
