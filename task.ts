@@ -14,7 +14,7 @@
 // let isEligible = (userInput > 18) ? true : false;
 // console.log(`Result: ${isEligible}`);
 
-//Task: Calculate Discount
+//Task: Calculate Discount using ternary operator
 // const isMember:boolean;
 // const totalAmount:number = 0;
 function calculateDiscount(isMember:boolean,totalAmount:number)
@@ -25,6 +25,7 @@ function calculateDiscount(isMember:boolean,totalAmount:number)
 let result = calculateDiscount(true,201);
 console.log(result);
 
+//traditional if else approach  
 function calculateDiscount1(memberStatus:boolean,totalAmount:number){
     let totalDiscount = 0;
     if(memberStatus == true && totalAmount > 200)
