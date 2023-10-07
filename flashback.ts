@@ -106,7 +106,7 @@ while(attempts < totalAttempts)
 {
     const correctNumber = Math.floor(Math.random() * 6);
     console.log(`Correct Number : ${correctNumber}`);
-    playerGuess = parseInt(prompt("Guess the number"));
+    playerGuess = parseInt(alert("Guess the number"));
     
         if(playerGuess === correctNumber)
         {
