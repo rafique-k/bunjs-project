@@ -3,7 +3,7 @@ if(browser === "Edge")
 {
     console.log(`You Have Got The Edge!`)
 }
-else if(browser === "Chrome" || "Firefox" || "Safari" || "Opera")
+else if(browser === "Chrome" || browser === "Firefox" || browser === "Safari" || browser === "Opera")
 {
     console.log(`Okay we support these browsers also`)
 }
